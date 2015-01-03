@@ -1,0 +1,11 @@
+# Site settings
+title: InJoin
+
+# Build settings
+markdown: kramdown
+exclude:
+   - libs
+
+sass:
+   sass_dir: styles
+   style: compressed
