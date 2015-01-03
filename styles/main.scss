@@ -1,0 +1,17 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import "../libs/material-design-iconic-font/scss/_variables";
+$md-css-prefix: icon;
+$md-font-path: "//plook.injoin.io/material-design-iconic-font/1.1.1/fonts";
+
+@import "../libs/material-design-iconic-font/scss/_mixins";
+@import "../libs/material-design-iconic-font/scss/_path";
+@import "../libs/material-design-iconic-font/scss/_core";
+@import "../libs/material-design-iconic-font/scss/_sizes";
+@import "../libs/material-design-iconic-font/scss/_border";
+@import "../libs/material-design-iconic-font/scss/_pulled";
+@import "../libs/material-design-iconic-font/scss/_spinned";
+@import "../libs/material-design-iconic-font/scss/_rotated";
+@import "../libs/material-design-iconic-font/scss/_icons";

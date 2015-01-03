@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% if site.posts.size == 0 %}
+    <div layout="column" layout-align="center center" flex>
+        <span class="icon icon-announcement icon-5x"></span>
+        <p>Não há posts para ler...</p>
+    </div>
+{% endif %}
+
+{% for post in site.posts %}
+    <md-card>
+        foo
+    </md-card>
+{% endfor %}
