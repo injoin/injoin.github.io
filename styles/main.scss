@@ -23,3 +23,8 @@ $md-font-path: "//plook.injoin.io/material-design-iconic-font/1.1.1/fonts";
     margin: 0 auto;
   }
 }
+
+md-card a {
+  color: currentColor;
+  text-decoration: none;
+}
