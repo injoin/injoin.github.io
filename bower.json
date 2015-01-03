@@ -1,0 +1,6 @@
+{
+    "name": "injoin",
+    "dependencies": {
+        "material-design-iconic-font": "~1.1.1"
+    }
+}
