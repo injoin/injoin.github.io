@@ -1,5 +1,6 @@
 # Site settings
 title: InJoin
+baseurl: ""
 
 # Build settings
 markdown: kramdown
