@@ -1,6 +1,7 @@
 # Site settings
 title: InJoin
 baseurl: ""
+timezone: America/Sao_Paulo
 
 # Build settings
 markdown: kramdown
