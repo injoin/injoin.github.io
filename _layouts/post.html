@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
-
-<h2>{{ page.title }}</h2>
-{{ content }}
+<img src="{{ site.baseurl }}/images/posts/{{ page.thumbnail }}"
+     class="post-thumbnail" main-color="bg">
+<md-card flex>
+    <md-card-content>
+        <h2>{{ page.title }}</h2>
+        {{ content }}
+    </md-card-content>
+</md-card>
