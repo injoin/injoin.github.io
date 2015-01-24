@@ -24,24 +24,16 @@ $md-font-path: "//plook.injoin.io/material-design-iconic-font/1.1.1/fonts";
   }
 }
 
-md-card {
-  padding: 0;
-
-  a {
-    color: currentColor;
-    text-decoration: none;
-  }
-}
-
-md-card-content {
-  display: block;
-  padding: 16px;
-
-  h2 {
-    margin-top: 0;
-  }
+md-card a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 .post-thumbnail {
   max-width: 100%;
+}
+
+.post-content {
+  margin-top: -16px;
+  background: #fff;
 }
