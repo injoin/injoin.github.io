@@ -1,19 +1,38 @@
 ---
 layout: default
 ---
+{% assign author = site.authors | map: page.author ] %}
+
 <md-card flex>
     <md-card-content>
-        <h2>{{ page.title }}</h2>
-        {{ content }}
+        <div layout-gt-md="row">
+            <div flex="15" class="post-meta" layout="column" layout-align="start end">
+                <div>
+                    <img src="https://gravatar.com/avatar/{{ author | map: 'gravatar' }}?s=48"
+                         class="md-avatar">
 
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    <md-tooltip>
+                        {{ author | map: 'name' }}
+                    </md-tooltip>
+                </div>
+                <time flex>
+                    {{ page.date | date: '%d/%m/%Y' }}
+                </time>
+            </div>
+            <div flex>
+                <h2>{{ page.title }}</h2>
+                {{ content }}
+
+                <div id="disqus_thread"></div>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+        </div>
     </md-card-content>
 </md-card>
 
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = "injoinweb"; // required: replace example with your forum shortname
+    var disqus_shortname = "{{ site.disqus.name }}";
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
