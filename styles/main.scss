@@ -17,6 +17,20 @@ $md-font-path: "//plook.injoin.io/material-design-iconic-font/1.1.1/fonts";
 @import "../libs/material-design-iconic-font/scss/_rotated";
 @import "../libs/material-design-iconic-font/scss/_icons";
 
+// -------------------------------------------------------------------------------------------------
+
+// Toolbar
+$toolbar-height:        192px;
+$toolbar-inner-height:  90px;
+
+// Card
+$card-bg:               #fff;
+
+// Others
+$text-secondary:        #999;
+
+// -------------------------------------------------------------------------------------------------
+
 .container {
   @media ( min-width: 980px ) {
     width: 980px;
@@ -24,16 +38,60 @@ $md-font-path: "//plook.injoin.io/material-design-iconic-font/1.1.1/fonts";
   }
 }
 
-md-card a {
-  color: currentColor;
-  text-decoration: none;
+md-toolbar {
+  height: $toolbar-height;
 }
 
-.post-thumbnail {
-  max-width: 100%;
+.md-toolbar-tools {
+  min-height: $toolbar-inner-height;
+  max-height: $toolbar-inner-height;
+}
+
+md-toolbar + .page-content {
+  z-index: 10;
+  margin-top: -( $toolbar-height - $toolbar-inner-height - 16px );
+}
+
+md-card {
+  background: #fff;
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.md-avatar {
+  border-radius: 50%;
+}
+
+.post-title a {
+  display: block;
+
+  .#{$md-css-prefix} {
+    font-size: .7em;
+    vertical-align: middle;
+    opacity: 0;
+    transition: .25s linear opacity;
+  }
+
+  &:hover .#{$md-css-prefix} {
+    opacity: .7;
+  }
+}
+
+.post-meta {
+  margin: .83em 1.66em 0 0;
+
+  > * + * {
+    margin-top: .58em;
+  }
+
+  time {
+    color: $text-secondary;
+  }
 }
 
 .post-content {
-  margin-top: -16px;
-  background: #fff;
+  background: $card-bg;
 }

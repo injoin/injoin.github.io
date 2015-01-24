@@ -10,14 +10,31 @@ layout: default
 {% endif %}
 
 {% for post in site.posts %}
-    <md-card>
-        <img src="{{ site.baseurl }}/images/posts/{{ post.thumbnail }}"
-             class="post-thumbnail">
-        <md-card-content>
-            <h2>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </h2>
-            {{ post.excerpt }}
+    {% assign author = site.authors | map: post.author %}
+    <md-card class="md-whiteframe-z2">
+        <md-card-content layout-gt-md="row">
+            <div flex="15" class="post-meta" layout="column" layout-align="start end">
+                <div>
+                    <img src="https://gravatar.com/avatar/{{ author | map: 'gravatar' }}?s=48"
+                         class="md-avatar">
+
+                    <md-tooltip>
+                        {{ author | map: 'name' }}
+                    </md-tooltip>
+                </div>
+                <time flex>
+                    {{ post.date | date: '%d/%m/%Y' }}
+                </time>
+            </div>
+            <div flex>
+                <h2 class="post-title">
+                    <a href="{{ post.url }}">
+                        {{ post.title }}
+                        <small class="icon icon-open-in-new"></small>
+                    </a>
+                </h2>
+                {{ post.excerpt }}
+            </div>
         </md-card-content>
     </md-card>
 {% endfor %}

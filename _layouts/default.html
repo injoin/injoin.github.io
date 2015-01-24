@@ -2,8 +2,8 @@
 <html ng-app="app">
     {% include head.html %}
     <body layout="column" layout-fill>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
+        <md-toolbar class="md-whiteframe-z1">
+            <div class="md-toolbar-tools container">
                 <h1 class="logo">
                     <a href="{{ site.baseurl }}/">
                         <svg viewBox="0 0 297 149" style="height: 48px"
@@ -19,11 +19,11 @@
                 </md-button>
             </div>
         </md-toolbar>
-        <md-content layout="column" flex>
+        <div class="page-content" layout="column" flex>
             <div class="container">
                 {{ content }}
             </div>
-        </md-content>
+        </div>
         {% include footer.html %}
     </body>
 </html>
