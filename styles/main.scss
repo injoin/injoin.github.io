@@ -45,6 +45,12 @@ md-toolbar {
 .md-toolbar-tools {
   min-height: $toolbar-inner-height;
   max-height: $toolbar-inner-height;
+
+  .md-button-icon {
+    width: 34px;
+    height: 34px;
+    margin: 0 5px;
+  }
 }
 
 md-toolbar + .page-content {
@@ -59,6 +65,11 @@ md-card {
     color: currentColor;
     text-decoration: none;
   }
+}
+
+.#{$md-css-prefix},
+.fa {
+  font-size: 24px;
 }
 
 .md-avatar {
