@@ -3,6 +3,13 @@ title: InJoin
 baseurl: ""
 timezone: America/Sao_Paulo
 
+# Authors
+authors:
+   gustavohenke:
+      name: Gustavo Henke
+      email: gustavo@injoin.io
+      gravatar: f46023f904309178e8d9bfc7a4a37979
+
 # Build settings
 markdown: kramdown
 exclude:
