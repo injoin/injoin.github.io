@@ -10,16 +10,16 @@ layout: default
 {% endif %}
 
 {% for post in site.posts %}
-    {% assign author = site.authors | map: post.author %}
+    {% assign author = site.authors[post.author] %}
     <md-card>
         <md-card-content layout-gt-md="row">
             <div flex="15" class="post-meta" layout="column" layout-align="start end">
                 <div>
-                    <img src="https://gravatar.com/avatar/{{ author | map: 'gravatar' }}?s=48"
+                    <img src="https://gravatar.com/avatar/{{ author.gravatar }}?s=48"
                          class="md-avatar">
 
                     <md-tooltip>
-                        {{ author | map: 'name' }}
+                        {{ author.name }}
                     </md-tooltip>
                 </div>
                 <time flex>

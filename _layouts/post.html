@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-{% assign author = site.authors | map: page.author ] %}
+{% assign author = site.authors[page.author] %}
 
 <md-card flex>
     <md-card-content>
         <div layout-gt-md="row">
             <div flex="15" class="post-meta" layout="column" layout-align="start end">
                 <div>
-                    <img src="https://gravatar.com/avatar/{{ author | map: 'gravatar' }}?s=48"
+                    <img src="https://gravatar.com/avatar/{{ author.gravatar }}?s=48"
                          class="md-avatar">
 
                     <md-tooltip>
-                        {{ author | map: 'name' }}
+                        {{ author.name }}
                     </md-tooltip>
                 </div>
                 <time flex>
