@@ -54,6 +54,7 @@ md-toolbar {
 }
 
 md-toolbar + .page-content {
+  position: relative;
   z-index: 10;
   margin-top: -( $toolbar-height - $toolbar-inner-height - 16px );
 }

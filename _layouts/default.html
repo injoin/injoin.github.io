@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="app">
     {% include head.html %}
-    <body layout="column" layout-fill>
+    <body>
         <md-toolbar class="md-whiteframe-z1">
             <div class="md-toolbar-tools container">
                 <h1 class="logo">
@@ -21,7 +21,7 @@
                 {% endfor %}
             </div>
         </md-toolbar>
-        <div class="page-content" layout="column" flex>
+        <div class="page-content" layout="column">
             <div class="container">
                 {{ content }}
             </div>
