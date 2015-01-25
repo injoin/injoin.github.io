@@ -61,7 +61,7 @@ md-toolbar + .page-content {
 }
 
 md-card {
-  background: #fff;
+  background: $card-bg;
 
   a {
     color: currentColor;
@@ -109,8 +109,4 @@ md-card {
   @media ( max-width: 599px ) {
     margin-left: .58em;
   }
-}
-
-.post-content {
-  background: $card-bg;
 }
