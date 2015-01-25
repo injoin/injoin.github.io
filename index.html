@@ -12,8 +12,10 @@ layout: default
 {% for post in site.posts %}
     {% assign author = site.authors[post.author] %}
     <md-card>
-        <md-card-content layout-gt-md="row">
-            <div flex="15" class="post-meta" layout="column" layout-align="start end">
+        <md-card-content layout-sm="column" layout-gt-sm="row" layout-padding layout-margin>
+            <div flex="15" class="post-meta"
+                 layout="row" flex-order-sm="2" layout-align-sm="start center"
+                 layout-gt-sm="column" layout-align-gt-sm="start end" flex-order-gt-sm="0">
                 <div>
                     <img src="https://gravatar.com/avatar/{{ author.gravatar }}?s=48"
                          class="md-avatar">
@@ -22,11 +24,12 @@ layout: default
                         {{ author.name }}
                     </md-tooltip>
                 </div>
-                <time flex>
-                    {{ post.date | date: '%d/%m/%Y' }}
-                </time>
+                <div class="post-meta-content" flex>
+                    <div hide-gt-sm>{{ author.name }}</div>
+                    <time>{{ post.date | date: '%d/%m/%Y' }}</time>
+                </div>
             </div>
-            <div flex>
+            <div flex flex-order="1">
                 <h2 class="post-title">
                     <a href="{{ post.url }}">
                         {{ post.title }}

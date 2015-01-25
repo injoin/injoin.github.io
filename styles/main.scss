@@ -27,6 +27,7 @@ $toolbar-inner-height:  90px;
 $card-bg:               #fff;
 
 // Others
+$spacing:               .83em;
 $text-secondary:        #999;
 
 // -------------------------------------------------------------------------------------------------
@@ -77,30 +78,36 @@ md-card {
   border-radius: 50%;
 }
 
-.post-title a {
-  display: block;
+.post-title {
+  margin: ( $spacing / 2 ) 0;
 
-  .#{$md-css-prefix} {
-    font-size: .7em;
-    vertical-align: middle;
-    opacity: 0;
-    transition: .25s linear opacity;
-  }
+  a {
+    display: block;
 
-  &:hover .#{$md-css-prefix} {
-    opacity: .7;
+    .#{$md-css-prefix} {
+      font-size: .7em;
+      vertical-align: middle;
+      opacity: 0;
+      transition: .25s linear opacity;
+    }
+
+    &:hover .#{$md-css-prefix} {
+      opacity: .7;
+    }
   }
 }
 
-.post-meta {
-  margin: .83em 1.66em 0 0;
+.post-meta time {
+  color: $text-secondary;
+}
 
-  > * + * {
+.post-meta-content {
+  @media ( min-width: 600px ) {
     margin-top: .58em;
   }
 
-  time {
-    color: $text-secondary;
+  @media ( max-width: 599px ) {
+    margin-left: .58em;
   }
 }
 
