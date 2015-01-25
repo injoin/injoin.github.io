@@ -19,10 +19,21 @@
                         <span class="fa fa-{{ network[0] }} fa-2x"></span>
                     </md-button>
                 {% endfor %}
+
+
             </div>
         </md-toolbar>
         <div class="page-content" layout="column">
             <div class="container">
+                {% if page.path %}
+                <md-button href="{{ site.github_url }}/blob/master/{{ page.path }}"
+                           class="md-fab md-accent" aria-label="Editar no GitHub"
+                           hide show-gt-md>
+                    <span class="icon icon-mode-edit"></span>
+                    <md-tooltip>Editar no GitHub</md-tooltip>
+                </md-button>
+                {% endif %}
+
                 {{ content }}
             </div>
         </div>
