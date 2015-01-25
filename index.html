@@ -10,34 +10,13 @@ layout: default
 {% endif %}
 
 {% for post in site.posts %}
-    {% assign author = site.authors[post.author] %}
-    <md-card>
-        <md-card-content layout-sm="column" layout-gt-sm="row" layout-padding layout-margin>
-            <div flex="15" class="post-meta"
-                 layout="row" flex-order-sm="2" layout-align-sm="start center"
-                 layout-gt-sm="column" layout-align-gt-sm="start end" flex-order-gt-sm="0">
-                <div>
-                    <img src="https://gravatar.com/avatar/{{ author.gravatar }}?s=48"
-                         class="md-avatar">
-
-                    <md-tooltip>
-                        {{ author.name }}
-                    </md-tooltip>
-                </div>
-                <div class="post-meta-content" flex>
-                    <div hide-gt-sm>{{ author.name }}</div>
-                    <time>{{ post.date | date: '%d/%m/%Y' }}</time>
-                </div>
-            </div>
-            <div flex flex-order="1">
-                <h2 class="post-title">
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                        <small class="icon icon-open-in-new"></small>
-                    </a>
-                </h2>
-                {{ post.excerpt }}
-            </div>
-        </md-card-content>
-    </md-card>
+    {% include post-top.html post=post %}
+    <h2 class="post-title">
+        <a href="{{ post.url }}">
+            {{ post.title }}
+            <small class="icon icon-open-in-new"></small>
+        </a>
+    </h2>
+    {{ post.excerpt }}
+    {% include post-bottom.html post=post %}
 {% endfor %}

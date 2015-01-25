@@ -3,32 +3,13 @@ layout: default
 ---
 {% assign author = site.authors[page.author] %}
 
-<md-card flex>
-    <md-card-content>
-        <div layout-gt-md="row">
-            <div flex="15" class="post-meta" layout="column" layout-align="start end">
-                <div>
-                    <img src="https://gravatar.com/avatar/{{ author.gravatar }}?s=48"
-                         class="md-avatar">
+{% include post-top.html post=page %}
+<h2 class="post-title">{{ page.title }}</h2>
+{{ content }}
 
-                    <md-tooltip>
-                        {{ author.name }}
-                    </md-tooltip>
-                </div>
-                <time flex>
-                    {{ page.date | date: '%d/%m/%Y' }}
-                </time>
-            </div>
-            <div flex>
-                <h2>{{ page.title }}</h2>
-                {{ content }}
-
-                <div id="disqus_thread"></div>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
-        </div>
-    </md-card-content>
-</md-card>
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% include post-bottom.html post=page %}
 
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
