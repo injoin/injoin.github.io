@@ -17,10 +17,9 @@
                 {% for network in site.data.networks %}
                     <md-button class="md-button-icon" href="{{ network[1].url }}" aria-label="{{ network[1].name }}">
                         <span class="fa fa-{{ network[0] }} fa-2x"></span>
+                        <md-tooltip>{{ network[1].name }}</md-tooltip>
                     </md-button>
                 {% endfor %}
-
-
             </div>
         </md-toolbar>
         <div class="page-content" layout="column">
