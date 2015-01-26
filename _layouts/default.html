@@ -24,7 +24,7 @@
         </md-toolbar>
         <div class="page-content" layout="column">
             <div class="container">
-                {% if page.path %}
+                {% if page.path contains "_posts" %}
                 <md-button href="{{ site.github_url }}/blob/master/{{ page.path }}"
                            class="md-fab md-accent" aria-label="Editar no GitHub"
                            hide show-gt-md>
