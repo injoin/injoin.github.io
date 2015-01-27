@@ -1,11 +1,14 @@
 github:
   name: GitHub
+  username: injoin
   url: https://github.com/injoin
 
 twitter:
   name: Twitter
+  username: injoinweb
   url: https://twitter.com/injoinweb
 
 facebook:
   name: Facebook
+  username: injoineb
   url: https://facebook.com/injoinweb
