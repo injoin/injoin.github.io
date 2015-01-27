@@ -30,6 +30,14 @@
     {% endif %}
     <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}">
 
+    <!-- Schema.org Google -->
+    {% if page.title %}
+    <meta itemprop="name" content="{{ page.title }} &bull; {{ site.title }}">
+    {% else %}
+    <meta itemprop="name" content="{{ site.title }}">
+    {% endif %}
+    <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines }}">
+
     <link rel="stylesheet" href="//plook.injoin.io/angular-material/0.7.0/angular-material.min.css">
     <link rel="stylesheet" href="//plook.injoin.io/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/styles/main.css">
