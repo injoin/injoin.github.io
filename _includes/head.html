@@ -11,16 +11,24 @@
     <!-- Twitter cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.data.networks.twitter.username }}">
+    {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }} &bull; {{ site.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt }}">
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}">
 
     <!-- Facebook OpenGraph -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en">
     <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.excerpt }}">
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}">
+    {% endif %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}">
 
     <link rel="stylesheet" href="//plook.injoin.io/angular-material/0.7.0/angular-material.min.css">
     <link rel="stylesheet" href="//plook.injoin.io/font-awesome/4.3.0/css/font-awesome.min.css">
