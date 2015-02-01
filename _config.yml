@@ -1,6 +1,7 @@
 # Site settings
 title: InJoin
-baseurl: "https://injoin.io"
+baseurl: ""
+fullurl: https://injoin.io
 timezone: America/Sao_Paulo
 github_url: https://github.com/injoin/injoin.github.io
 

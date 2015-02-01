@@ -9,13 +9,13 @@ layout: default
 
 <div class="share-buttons">
     <h4>Share on</h4>
-    <md-button class="md-primary md-raised md-hue-2" md-theme="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseurl }}{{ page.url }}">
+    <md-button class="md-primary md-raised md-hue-2" md-theme="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.fullurl }}{{ page.url }}">
         Facebook
     </md-button>
-    <md-button class="md-primary md-raised" md-theme="googleplus" href="https://plus.google.com/share?url={{ site.baseurl }}{{ page.url }}">
+    <md-button class="md-primary md-raised" md-theme="googleplus" href="https://plus.google.com/share?url={{ site.fullurl }}{{ page.url }}">
         Google+
     </md-button>
-    <md-button class="md-primary md-raised" md-theme="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.baseurl }}{{ page.url }}&via={{ site.data.networks.twitter.username }}">
+    <md-button class="md-primary md-raised" md-theme="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.fullurl }}{{ page.url }}&via={{ site.data.networks.twitter.username }}">
         Twitter
     </md-button>
 </div>
