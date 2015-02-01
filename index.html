@@ -18,5 +18,12 @@ layout: default
         </a>
     </h2>
     {{ post.excerpt }}
+
+    {% if post.content contains site.excerpt_separator %}
+        <md-button class="md-raised md-primary" href="{{ site.baseurl }}{{ post.url }}">
+            Continue reading
+        </md-button>
+    {% endif %}
+
     {% include post-bottom.html post=post %}
 {% endfor %}
