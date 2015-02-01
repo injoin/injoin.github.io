@@ -96,7 +96,7 @@ polluting your repository with various scripts for Windows/Unix is not an option
 But hey, we can update `process.env.NODE_PATH` in Node...
 
 ### Meet the hackish way
-As my app uses ES6, I'm not dropping modules in favor to functions, so I ended up using the most
+As my app uses ES6, I'm not dropping modules in favor of functions, so I ended up using the most
 hackish way I found: a combo of `process.env.NODE_PATH` and private Node core method.
 
 {% highlight js %}
