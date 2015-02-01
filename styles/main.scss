@@ -17,6 +17,8 @@ $md-font-path: "//plook.injoin.io/material-design-iconic-font/1.1.1/fonts";
 @import "../libs/material-design-iconic-font/scss/_rotated";
 @import "../libs/material-design-iconic-font/scss/_icons";
 
+@import "_syntax";
+
 // -------------------------------------------------------------------------------------------------
 
 // Toolbar
@@ -42,6 +44,17 @@ a {
   @media ( min-width: 960px ) {
     width: 960px;
     margin: 0 auto;
+  }
+}
+
+// Highlighter
+// -------------------------------------------------------------------------------------------------
+.highlight {
+  padding: 12px;
+  background: #f2f2f2;
+
+  pre {
+    margin: 0
   }
 }
 
