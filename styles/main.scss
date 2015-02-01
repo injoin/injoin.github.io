@@ -32,6 +32,10 @@ $text-secondary:        #999;
 
 // -------------------------------------------------------------------------------------------------
 
+a {
+  color: #607d8b;
+}
+
 .container {
   position: relative;
 
@@ -82,7 +86,7 @@ a.md-button.md-fab .#{$md-css-prefix} {
 md-card {
   background: $card-bg;
 
-  a {
+  .post-title a {
     color: currentColor;
     text-decoration: none;
   }
