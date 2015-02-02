@@ -71,7 +71,7 @@ app
 
 The problem? It feels wrong to versionate something inside `node_modules` and you'll find lots of
 garbage while trying to find first-party code. Also, such code is likely to include various business
-rules.
+rules - `node_modules` doesn't feel like the place for that.
 
 ### 3. Global variable
 Just define a global variable with the app entry point directory:
