@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/gustavohenke
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://injoin.io
+  * I am gustavohenke (https://keybase.io/gustavohenke) on keybase.
+  * I have a public key with fingerprint 1FFB E83F 4C57 C8D0 A65C  4388 7A48 53C4 38D5 C9BB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "1ffbe83f4c57c8d0a65c43887a4853c438d5c9bb",
+            "host": "keybase.io",
+            "key_id": "7a4853c438d5c9bb",
+            "kid": "0101e1041130d25239813a8e9981bf8f9b20c48723bd65aa0e0ca50c681e975c988a0a",
+            "uid": "5ca8841f2886b735e5488a41a2aad319",
+            "username": "gustavohenke"
+        },
+        "service": {
+            "hostname": "injoin.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1424952172,
+    "expire_in": 157680000,
+    "prev": "3c1adf71b54ab6c92d6d1885724acb55ef25e247aee2832b08365e6303312a87",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.7
+Comment: https://keybase.io/crypto
+
+yMIfAnicbZJbSBRRGMd310u60g2CipB0oMuDyJxz5sycWaKFMjKt7CEo01zOzJxZ
+p91mtt1ZLbIiesgyKivohqVBSLcHe+gGiZoQYfUUEZiVaEFZ2Ab1YHY5Y/XWefnO
++b7f9z/n/3H6p2f5gv4HecEXB99c/+Ef6F2R9m0cL4jvFjTH2CWEdgsxNhVMy46y
+ZCJp2a4QEoBpaowgU9KxohNDpDLWJUSIQiWCkbc1sK5qmlAi1Dspr4PLaDTFSi2H
+5/ghYhk8+x8+NlUQgQgYECUAkGhADJFKAKKEqTxqJjFVDYq6RBSINEPGlIpM1CkW
+dZkApipcixAqUi6XnpLDOiVEAiYkRNYUhBmWOCABCik1EFA9MMWSNt3OOB1Np1za
+4NQzO8aEPSUCrzRYOvPG4Ln5S1n2Nsey/xhKJB3X0Z04T9e7biIV8trcXQmPa2Ra
+5K9CRLNsgw+SdzSwZMpybCEEOKm7licJJCipGAIFlghsZ8JKsojlEViRiciXdw9r
+4JJIB9QwFaBhiWqyrkJDNgAhWIES1TWMmQkxg5JCGYMEQU0kSMZMRiJCAFKiCJ6n
+HbYjhBB/Jo1yyZQVtambTnLDfT212T5/0JebE/C+gi+YP+vfB5ndPu3nos5BKPul
+staXq35Emgbcis8lXWLj1+bN+tqcPHWkpTBc2nIu4O6ZsSkv/84yX4edCe17P703
+++XXmddPHei621NdE8tfkgk2blhzuSDwvPLQ/O6aj3UF3VuOX6zJGZs4ub8qK7fj
+xOlXcwv9VwYfwl/DbeGJqiVO/mDRjcmW4mffjAXrpPHM6uLRU9+/HBkP+K99KD/z
+7rnan3nq4PijYnt589KEvqnpUln1hVs73/bOmd0uPb498qqvfOHYUDaG8a2F6yer
+lC07OsM/4+17+866Y1cTXcfC5+/FWg8vrvhUVNc2r7VpqPN19Gbl6OjRsbbyodGz
+KytzO2rvb3ty7rY8/BsluyhV
+=Y6df
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gustavohenke
+
+==================================================================
